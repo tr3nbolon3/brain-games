@@ -1,0 +1,19 @@
+{
+  "name": "brain-games",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haliont/project-lvl1-s280.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haliont/project-lvl1-s280/issues"
+  },
+  "homepage": "https://github.com/Haliont/project-lvl1-s280#readme"
+}
