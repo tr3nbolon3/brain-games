@@ -1,8 +1,7 @@
 {
   "name": "brain-games--z",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "mini-games for brain development",
   "scripts": {
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
