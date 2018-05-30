@@ -1,6 +1,6 @@
 {
   "name": "brain-games--z",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "mini-games for brain development",
   "scripts": {
     "babel-node": "babel-node",
@@ -11,7 +11,7 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
-    "calc": "dist/bin/brain-calc.js"
+    "brain-calc": "dist/bin/brain-calc.js"
   },
   "files": [
     "dist"
