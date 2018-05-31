@@ -1,4 +1,4 @@
-import game from '../interface';
+import game from '../engine';
 
 export default () => {
   const f = () => {
