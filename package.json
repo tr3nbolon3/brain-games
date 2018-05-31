@@ -1,6 +1,6 @@
 {
   "name": "brain-games--z",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "mini-games for brain development",
   "scripts": {
     "babel-node": "babel-node",
