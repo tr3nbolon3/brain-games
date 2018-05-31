@@ -1,20 +1,31 @@
 import game from '../engine';
+import getRandomInt from '../utils';
 
 export default () => {
-  const f = () => {
-    const firstNum = Math.floor(Math.random() * (50 - 1)) + 1;
-    const lastNum = Math.floor(Math.random() * (50 - 1)) + 1;
-    const operation = Math.floor(Math.random() * 3);
+  const getGameData = () => {
+    const a = getRandomInt(1, 50);
+    const b = getRandomInt(1, 50);
+    const operation = getRandomInt(0, 3);
 
-    const ops = {
-      0: [`${firstNum} + ${lastNum}`, `${firstNum + lastNum}`],
-      1: [`${firstNum} - ${lastNum}`, `${firstNum - lastNum}`],
-      2: [`${firstNum} * ${lastNum}`, `${firstNum * lastNum}`],
-      3: [`${firstNum} / ${lastNum}`, `${firstNum / lastNum}`],
-    };
+    let result;
+    switch (operation) {
+      case 0:
+        result = [`${a} + ${b}`, `${a + b}`];
+        break;
+      case 1:
+        result = [`${a} - ${b}`, `${a - b}`];
+        break;
+      case 2:
+        result = [`${a} * ${b}`, `${a * b}`];
+        break;
+      case 3:
+      default:
+        result = [`${a} / ${b}`, `${a / b}`];
+        break;
+    }
 
-    return ops[operation];
+    return result;
   };
 
-  game('What is the result of the expression?', f);
+  game('What is the result of the expression?', getGameData);
 };

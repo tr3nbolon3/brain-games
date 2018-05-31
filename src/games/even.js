@@ -1,12 +1,13 @@
 import game from '../engine';
+import getRandomInt from '../utils';
 
 export default () => {
-  const f = () => {
-    const randomNum = Math.floor(Math.random() * (100 - 1)) + 1;
-    const correctAnswer = randomNum % 2 === 0 ? 'yes' : 'no';
+  const getGameData = () => {
+    const question = getRandomInt(1, 100);
+    const correctAnswer = question % 2 === 0 ? 'yes' : 'no';
 
-    return [randomNum, correctAnswer];
+    return [question, correctAnswer];
   };
 
-  game('Answer "yes" if number even otherwise answer "no".', f);
+  game('Answer "yes" if number even otherwise answer "no".', getGameData);
 };
