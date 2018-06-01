@@ -27,6 +27,6 @@ const getGameData = () => {
   return [question, correctAnswer];
 };
 
-const description = 'Answer "yes" if number even otherwise answer "no".';
+const description = 'Balance the given number.';
 
 export default () => game(description, getGameData);
