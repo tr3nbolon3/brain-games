@@ -21,7 +21,7 @@ export const getBalancedNumber = (num) => {
 };
 
 const getGameData = () => {
-  const question = getRandomInt(1, 100);
+  const question = getRandomInt(100, 5000);
   const correctAnswer = getBalancedNumber(question);
 
   return [question, correctAnswer];
