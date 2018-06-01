@@ -1,12 +1,14 @@
 import readlineSync from 'readline-sync';
 
-export default (gameExplain, getGameData) => {
-  console.log(`Welcome to the Brain Games\n${gameExplain}\n`);
+const questionCount = 3;
+
+export default (description, getGameData) => {
+  console.log('Welcome to the Brain Games');
+  console.log(`${description}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
 
-  const questionCount = 3;
-  const iter = (times) => {
+  const makeGame = (times) => {
     if (times === questionCount) {
       console.log(`Congratulations, ${userName}`);
       return;
@@ -18,7 +20,7 @@ export default (gameExplain, getGameData) => {
 
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-      iter(times + 1);
+      makeGame(times + 1);
       return;
     }
 
@@ -26,5 +28,5 @@ export default (gameExplain, getGameData) => {
     console.log(`Let's try again, ${userName}`);
   };
 
-  return iter(0);
+  return makeGame(0);
 };
