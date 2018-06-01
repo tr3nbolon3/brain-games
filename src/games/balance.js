@@ -1,7 +1,7 @@
 import game from '../engine';
 import getRandomInt from '../utils';
 
-export const getBalancedNumber = (num) => {
+const getBalancedNumber = (num) => {
   const iter = (arr) => {
     const min = Math.min.apply(null, arr);
     const max = Math.max.apply(null, arr);
