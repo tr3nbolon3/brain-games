@@ -1,6 +1,5 @@
 # BRAIN GAMES
 [![Maintainability](https://api.codeclimate.com/v1/badges/b7f99a404599ccd0e8c3/maintainability)](https://codeclimate.com/github/Haliont/brain-games/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/b7f99a404599ccd0e8c3/test_coverage)](https://codeclimate.com/github/Haliont/brain-games/test_coverage)
 [![Build Status](https://travis-ci.org/Haliont/brain-games.svg?branch=master)](https://travis-ci.org/Haliont/brain-games)
 ***
 **Набор мини игр для тренировки мозга**
