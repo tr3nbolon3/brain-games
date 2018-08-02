@@ -1,6 +1,6 @@
 {
   "name": "brain-games--z",
-  "version": "0.9.3",
+  "version": "1.0.0",
   "description": "mini-games for brain development",
   "scripts": {
     "babel-node": "babel-node",
@@ -21,14 +21,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Haliont/project-lvl1-s280.git"
+    "url": "git+https://github.com/Haliont/brain-games.git"
   },
-  "author": "",
+  "author": "Zemliakov Konstantin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Haliont/project-lvl1-s280/issues"
+    "url": "https://github.com/Haliont/brain-games/issues"
   },
-  "homepage": "https://github.com/Haliont/project-lvl1-s280#readme",
+  "homepage": "https://github.com/Haliont/brain-games#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
